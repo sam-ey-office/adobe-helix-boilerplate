@@ -6,6 +6,58 @@
 .columns img {
     width: 100%;
 }
+/* Column (feature) */
+.columns.feature > div {
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+}
+
+.columns.feature > div > div:first-child {
+    border-bottom: 1px solid white;
+    padding-top: 20px;
+    padding-right: 0;
+}
+
+.columns.feature > div > div:first-child > p {
+    font-size: 0.75em;
+    text-align: justify;
+}
+
+.columns.feature > div > div {
+    padding-left: 0;
+}
+
+.columns.feature > div > div > p > em > a.button.secondary {
+    border: 1px solid white;
+    border-radius: 0;
+    font-size: 0.75em;
+    width: 100%;
+}
+
+.columns.feature > div > div > p > em > a.button.secondary:hover {
+    background-color: white;
+    color: black;
+}
+
+.columns.feature > div > div:first-child > h3 {
+    color: yellow;
+    font-size: 1em;
+}
+
+.columns.feature > div > div > h3 {
+    color: yellow;
+    font-size: 1em;
+}
+
+.columns.feature > div > div:last-child {
+    padding-right: 0;
+    padding-top: 20px;
+}
+
+.columns.feature > div > div:last-child > p {
+    font-size: 0.75em;
+    text-align: justify;
+}
 
 @media (min-width: 900px) {
     .columns > div {
@@ -22,4 +74,44 @@
     .columns > div > div:first-of-type {
         margin-left: unset;
     }
+    
+    /* Column (feature) */
+    .columns.feature > div > div:first-child {
+        border-right: 1px solid white;
+        border-bottom: none;
+        padding-top: 70px;
+        padding-right: 50px;
+    }
+
+    .columns.feature > div > div {
+        padding-left: 60px;
+    }
+
+    .columns.feature > div > div > p > em > a.button.secondary {
+        border: 1px solid white;
+        border-radius: 0;
+        font-size: 0.75em;
+        width: auto;
+    }
+
+    .columns.feature > div > div > p > em > a.button.secondary:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .columns.feature > div > div:first-child > h3 {
+        color: yellow;
+        font-size: 1.25em;
+    }
+
+    .columns.feature > div > div > h3 {
+        color: yellow;
+        font-size: 1.25em;
+    }
+
+    .columns.feature > div {
+        border-bottom: none;
+        border-top: none;
+    }
+
 }
