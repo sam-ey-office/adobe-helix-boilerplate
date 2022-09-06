@@ -14,13 +14,14 @@
   /* colors */
   --link-color: #035fe6;
   --link-hover-color: #136ff6;
-  --background-color: #fff;
-  --overlay-background-color: #eee;
-  --highlight-background-color: #ccc;
-  --text-color: #000;
+  --background-color: #2e2e38;
+  --overlay-background-color: #2e2e38;
+  --highlight-background-color: #2e2e38;
+  --text-color: white;
+  --highlight-color: #ffe600;
 
   /* fonts */
-  --body-font-family: 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
+  --body-font-family: eyinterstate, 'trebuchet ms', 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
   --heading-font-family: var(--body-font-family);
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
@@ -38,7 +39,7 @@
   --heading-font-size-xs: 18px;
 
   /* nav height */
-  --nav-height: 64px;
+  --nav-height: 80px;
 
 }
 
@@ -46,6 +47,7 @@ body {
   font-size: var(--body-font-size-m);
   margin: 0;
   font-family: var(--body-font-family);
+  font-weight: 300;
   line-height: 1.6;
   color: var(--text-color);
   background-color: var(--background-color);
@@ -63,7 +65,7 @@ header {
 h1, h2, h3,
 h4, h5, h6 {
   font-family: var(--heading-font-family);
-  font-weight: 600;
+  font-weight: 300;
   line-height: 1.25;
   margin-top: 1em;
   margin-bottom: .5em;
@@ -103,6 +105,10 @@ code, samp {
 
 pre {
   overflow: scroll;
+}
+
+strong {
+  font-weight: 700;
 }
 
 /* buttons */
@@ -163,8 +169,15 @@ main input:hover {
 }
 
 main .section {
-  padding: 64px 16px;
+  padding: 64px 0;
 }
+
+main .section > div {
+  padding: 0 16px;
+  /* max-width: 350px;*/
+  margin: auto;
+}
+
 
 main pre {
   background-color: var(--overlay-background-color);
